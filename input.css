@@ -62,7 +62,7 @@ nav, .header-body, .about .container{
     align-items: start;
     position: relative;
 }
-/* nav{
+nav{
     z-index: 9;
 }
 nav li{
@@ -77,4 +77,55 @@ nav a:not(.logo){
 }
 nav a:hover{
     color: ;
-} */
+}
+nav li.active{
+    color: #ebebec;
+    position: relative;
+}
+nav .active::before{
+    content: '';
+    background-color: #ffc25c;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -0.8em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo img{
+    width: 3.6em;
+    height: 3.6em;
+}
+.menu-btn{
+    font-size: 1.5em;
+    color: #ebebec;
+    display: none;
+    cursor: pointer;
+}
+
+nav .menu-open{
+    height: 14.5em;
+
+}
+
+.header-body{
+    margin-top: 5em;
+}
+.title{
+    font-size: 5em;
+    position: relative;
+    line-height: 1em;
+    margin-bottom: 1.5em;
+}
+.title::before{
+    content: '';
+    background-color: #ffc25c;
+    width: 5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -0.5em;
+    left: 0;
+    /* transform: translateX(-50%); */
+}
