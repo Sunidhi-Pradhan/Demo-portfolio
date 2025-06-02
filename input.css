@@ -129,3 +129,30 @@ nav .menu-open{
     left: 0;
     /* transform: translateX(-50%); */
 }
+.social li{
+    display: inline-block;
+    margin-right: 1.5em;
+}
+.social a{
+    font-size: 1.3em;
+    color: #ebebec;
+}
+.social a:hover{
+    color: #ffc25c;
+}
+.main-link{
+    display: inline-block;
+    color: #ffc25c;
+    margin-top: 2.5em;
+    font-size: 1.2em;
+}
+.main-link:hover{
+    color: #fff;
+}
+.main-link span{
+    margin-right: 0.8em;
+}
+.main-link span, .main-link i{
+    /* font-size: 1.2em; */
+    text-decoration: underline;
+}
