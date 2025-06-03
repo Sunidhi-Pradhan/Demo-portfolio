@@ -263,3 +263,35 @@ nav .menu-open {
     margin: 1em;
     display: inline-block;
 }
+.portfolio{
+    background: #333646;
+}
+.portfolio .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.col{
+    width: 23em;   
+}
+.col > div, .col .card{
+    margin-bottom: 8em;
+
+}
+.col .last-card{
+    margin-bottom: 0;
+}
+.card{
+    background: #252734;
+    position: relative;
+    height: 30em;
+    transform: 0.3s;
+}
+.card > div{
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
