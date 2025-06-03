@@ -295,3 +295,23 @@ nav .menu-open {
     position: relative;
     z-index: 1;
 }
+.card img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.portfolio .card-link:hover .card{
+    transform: translateY(-3em);
+}
+
+.blog{
+    background: #252734;
+}
+.blog .container .testimonial .container .contact .conatiner{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: start;
+    grid-gap: 2em;
+}
