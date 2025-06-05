@@ -315,3 +315,56 @@ nav .menu-open {
     align-items: start;
     grid-gap: 2em;
 }
+.post{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3em 0;
+    border-bottom: 1px solid #333646;
+}
+.post:nth-child(1){
+    padding-top: 0;
+}
+.post .main-link{
+    margin:0;
+}
+.post h3{
+margin: 0 3em ;
+text-align: center;
+}
+
+.testimonials{
+    background: #252734;
+}
+.testimonials{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 23em;
+}
+.testimonials img{
+    width: 20em;
+    height: 23em;
+    object-fit: cover;
+}
+.fa-quote-left{
+    color: #333646;
+}
+.pagination li {
+    background: #333646;
+    width: 4.5em;
+    height: 0.5em;
+    margin-right: 1.5em;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.pagination .pag-active{
+    background: #ffc25c;
+    /* width: 6em; */
+}
+
+.contact{
+    background: #333646;
+}
