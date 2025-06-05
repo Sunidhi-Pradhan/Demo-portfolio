@@ -368,3 +368,115 @@ text-align: center;
 .contact{
     background: #333646;
 }
+form{
+    justify-self: right;
+}
+form button{
+    cursor: pointer;
+}
+form button, input{
+    background: none;
+    border: none;
+}
+input{
+    color: #fff;
+    font-size: 1.2em;
+    width : 100%;
+    padding: 2em 0;
+}
+input:not(.mail-content){
+    border-bottom: 1px #414556 solid;
+}
+input::placeholder{
+    color: #fff;
+    font-weight: 600;
+}
+input:focus{
+    outline: none;
+}
+form .main-link{
+    margin: 0;
+}
+.attach{
+    color: #b7b7bc;
+    margin-right: 0.6em;
+    font-size: 1.2em;
+}
+.input-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mail-content{
+    width: 80%;
+}
+
+footer{
+    background: #333646;
+    text-align: center;
+}
+
+footer .logo img {
+    width: 8em;
+    height: 8em;
+}
+
+footer p {
+    /* margin: 1em 0; */
+    margin-bottom: 3em;
+}
+@media screen and (max-width: 1000px) {
+   .about .container,.header-container{
+    max-width: 35em;
+    margin: 0;
+   }
+   .header-body,.about .container,.blog .container,.testimonials .container,.contact .container{
+    grid-template-columns: 1fr;
+   }
+   .main-image{
+    display: none;
+   }
+   .header-body > div:nth-child(1){
+    margin-bottom: 3em;
+   }
+   .panels,.portfolio .container{
+    flex-direction: column;
+    align-items: center;
+   }
+   @media screen and (max-width: 900px) {
+    .menu{
+        background: #333646;
+        position: absolute;
+        top: 4em;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        overflow-y: hidden;
+        transition: 0.5s ease-in-out;
+    }
+    .menu li {
+       display: block;
+       justify-self: end;
+    }
+   }
+   @media screen and (max-width: 500px) {
+    html{
+        font-size: 14px;
+    }
+    .title{
+        font-size: 3em;
+    }
+    .pagination li{
+        width: 40px;
+        height: 8px;
+    }
+    .col,.testimonials img{
+        width: 100%;
+
+    }
+    .stats,.stats >div{
+        flex-direction: column;
+        /* align-items: center; */
+    }
+   }
+}
